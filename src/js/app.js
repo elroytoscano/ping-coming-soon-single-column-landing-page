@@ -1,5 +1,6 @@
-const inputField = document.querySelector('#emailField');
+const formDiv = document.querySelector('#formDiv');
 const notifyBtn = document.querySelector('#notify_btn');
+const inputField = document.querySelector('#emailField');
 const invalidEmailMessage = document.querySelector('#invalid-email');
 
 let isValid = true;
@@ -16,10 +17,12 @@ notifyBtn.addEventListener('click', (e) => {
   } else {
     invalidEmailMessage.classList.remove('invisible');
     inputField.classList.add('border-fmSecondaryLightRed');
+    formDiv.classList.add('gap-y-12');
   }
 });
 
 inputField.addEventListener('input', () => {
   invalidEmailMessage.classList.add('invisible');
   inputField.classList.remove('border-fmSecondaryLightRed');
+  formDiv.classList.add('gap-y-4');
 });
