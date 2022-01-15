@@ -46,9 +46,10 @@
             id="emailField"
             name="email"
             aria-label="Your email address"
-            class="transition-all border rounded-full placeholder-fmPrimaryBlue border-fmSecondaryPaleBlue px-5 py-4 focus:border-fmPrimaryBlue outline-none lg:w-3/4"
+            class="transition-all border rounded-full placeholder-fmPrimaryBlue border-fmSecondaryPaleBlue px-8 py-4 focus:border-fmPrimaryBlue outline-none text-xs sm:text-sm smd:text-base smmd:text-lg md:text-lg lg:text-xl lg:w-3/4"
           />
           <button
+            id="notify_btn"
             style="box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414)"
             class="capitalize bg-fmPrimaryBlue px-5 py-4 rounded-full text-white font-semibold transition-colors hover:bg-fmSecondaryPaleBlue w-full md:mt-0 lg:w-1/3"
           >
@@ -56,7 +57,7 @@
           </button>
           <small
             id="invalid-email"
-            class="text-xs mx-auto text-fmSecondaryLightRed font-light pt-2 absolute transform left-1/2 -translate-x-1/2 top-1/3 translate-y-1 flex w-full justify-center align-baseline lg:justify-start lg:pl-6 lg:top-14"
+            class="text-xs mx-auto invisible text-fmSecondaryLightRed font-light pt-2 absolute transform top-1/3 lg:top-full translate-y-0 sm:translate-y-0 smd:translate-y-2 smmd:translate-y-2 md:translate-y-2 lg:translate-y-0 xl:translate-y-0 flex w-full justify-center align-baseline lg:justify-start lg:left-8"
             ><em>Please provide a valid email address</em></small
           >
         </div>
@@ -114,5 +115,6 @@
         <span>&copy;</span> copyright ping. all rights reserved.
       </p>
     </footer>
+    <script src="/src/app.js"></script>
   </body>
 </html>
